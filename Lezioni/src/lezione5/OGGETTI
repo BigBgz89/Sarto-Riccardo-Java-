@@ -1,0 +1,9 @@
+OGGETTI
+--> Servono a non ripetere il codice
+esempio non conveniente : int qb1 = 200;
+          int qb2 = 300;
+          int qb3 = 1500; ecc ecc..
+
+          (cos'è un costruttore?
+
+    esempio oggetto : Bottiglia b1 = new Bottiglia();

@@ -2,11 +2,15 @@ package lezione3;
 
 import java.util.Scanner;
 
-//Es1: (if-else-Scanner) Chiedere un numero e stampare "Pari" o "dispari"
 public class EsercIterazioni {
     public static void main(String[] args) {
-        Scanner Tastiera = new Scanner(System.in);
-
-
+        Scanner tastiera = new Scanner(System.in);
+        System.out.println("Inserisci un numero: ");
+        int numero = tastiera.nextInt();
+        if (numero % 2 == 0) {
+            System.out.println("PARI");
+        } else {
+            System.out.println("DISPARI");
+        }
     }
 }

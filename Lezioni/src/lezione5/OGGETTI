@@ -7,3 +7,9 @@ esempio non conveniente : int qb1 = 200;
           (cos'è un costruttore?
 
     esempio oggetto : Bottiglia b1 = new Bottiglia();
+
+
+
+METODO RICORSIVIO
+È UNA FUNZIONE CHE SI RICHIAMA DA SOLA// I  metodi ricorsivi sostazialemnte sono dei cicli while, cioè fanno iterazioni
+sono + leggeri perchè sono corti da scrivere , ma occupano molta memoria.

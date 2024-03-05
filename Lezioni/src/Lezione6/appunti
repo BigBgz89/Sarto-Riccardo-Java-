@@ -1,0 +1,18 @@
+package Lezione6;
+/*
+* @author Riccardo Sarto*/
+//countdown ricorsivo
+public class EserciziFattoriale1 {
+    public  static void countdown(int x){
+        if(x> 0){
+            System.out.println(x);
+            countdown(x-1);
+        }
+        else
+            System.out.println("BOOOM!");
+    }//end countdown
+    public static void main(String[] args) {
+        countdown(10);
+
+    }//end main
+}//end class

@@ -15,12 +15,26 @@ public class BottigliaConTappo extends lezione5.Bottiglia{
     public void chiudi(){
         this.aperta = false;
     }
+
+
     public void apri(){
         this.aperta = true;
     }
 
     @Override
+    public void svuota(int quantita) {
+        if(this.aperta)
+        super.svuota(quantita);
+    }
+
+    @Override
+    public void riempi(int quantita) {
+        if(this.aperta)
+        super.riempi(quantita);
+    }
+    @Override
     public String toString() {
         return super.toString() + " aperto: " + aperta;
     }
+
 }

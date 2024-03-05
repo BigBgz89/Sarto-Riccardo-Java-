@@ -1,0 +1,49 @@
+Classe Poligono
+    Metodo astratto area()
+    Metodo astratto perimetro()
+
+Classe Rettangolo estende Poligono
+    Attributo base
+    Attributo altezza
+
+    Metodo area()
+        Ritorna base * altezza
+
+    Metodo perimetro()
+        Ritorna 2 * (base + altezza)
+
+Classe Quadrato estende Poligono
+    Attributo lato
+
+    Metodo area()
+        Ritorna lato * lato
+
+    Metodo perimetro()
+        Ritorna 4 * lato
+
+Classe Triangolo estende Poligono
+    Attributo lato1
+    Attributo lato2
+    Attributo lato3
+
+    Metodo area()
+        Calcola il semiperimetro
+        Ritorna la radice quadrata del semiperimetro * (semiperimetro - lato1) * (semiperimetro - lato2) * (semiperimetro - lato3)
+
+    Metodo perimetro()
+        Ritorna lato1 + lato2 + lato3
+
+Inizio main
+    Creare una lista forme di tipo Poligono
+
+    Aggiungere un Triangolo con lati 3, 4, 5 alla lista forme
+    Aggiungere un Quadrato con lato 4 alla lista forme
+    Aggiungere un Rettangolo con base 5 e altezza 6 alla lista forme
+
+    Dichiarare una variabile sommaAree e impostarla a 0
+
+    Per ogni forma in forme
+        Aggiungere l'area della forma a sommaAree
+
+    Stampare la somma delle aree
+Fine main

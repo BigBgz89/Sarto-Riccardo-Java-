@@ -29,6 +29,25 @@ public class Bottiglia {
         //this.quantita = Math.max(0,this.quantita - quantita);
     }
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Bottiglia bottiglia = (Bottiglia) o;
+
+        return capacita == bottiglia.capacita && quantita == bottiglia.quantita;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = capacita;
+        result = 31 * result + quantita;
+        return result;
+    }
+
     @Override
     public String toString() {
         return "B - " +
